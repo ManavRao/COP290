@@ -1,0 +1,11 @@
+CC= g++
+OBJECTS= 2D_to_3D.o
+LIBS= -lGL -lfreeglut -lGLU
+
+all: prog
+
+prog: $(OBJECTS)
+		$(CC) -o prog $(OBJECTS) $(LIBS)
+		
+2D_to_3D.o: 2D_to_3D.cpp
+		$(CC) -c 2D_to_3D.cpp

@@ -1,0 +1,361 @@
+\hypertarget{3_d__to__2_d_8h}{}\section{3\+D\+\_\+to\+\_\+2D.h File Reference}
+\label{3_d__to__2_d_8h}\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_faces}{Faces}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+1415926535898
+\item 
+\#define \mbox{\hyperlink{3_d__to__2_d_8h_af23b6aef79e50bfd29fd5b763acb8f99}{Cos}}(t)~cos(\mbox{\hyperlink{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}/180$\ast$(t))
+\item 
+\#define \mbox{\hyperlink{3_d__to__2_d_8h_ae6bf810ec90b6fb97470397fac19bd26}{Sin}}(t)~sin(\mbox{\hyperlink{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}/180$\ast$(t))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{3_d__to__2_d_8h_a070eb0c786650669a592f7e0d131bdb1}{check\+Loop}} (int x1, int x2, int y1, int y2, int z1, int z2)
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a37abedac5a2e232f35f1925669c648e1}{add\+Face}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a1b85f1b478c702e90d8b8c515f84d44e}{sel\+View}} (int x)
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a7f988b701e1fc823cd6baac4112d691f}{draw\+Faces}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a61731e44675c1f32b5fa9d00b95c2969}{the\+Cube}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_ab5faa224cc65d6fbce2935d0ed45f600}{draw\+Grid}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a1e630ed6a0e89a3c7b0ac99c63d29166}{draw\+Top\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a04a5aa187f66cb4d9afcd25244188ec6}{draw\+Front\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a38d63b700591c7243b42b2ade5ab3a3e}{draw\+Side\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a25271cef7c85e564c8ee6a339be359cd}{rot\+Grid}} (int x, int y, int z)
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a81d5857ed4feef4a1d6f74f335832563}{project}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a1e5b20fed15743656bb6d2e6a6ea6269}{display}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a6819355374dd277347abd7c4235f0cd7}{reshape}} (int width, int height)
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a8a94702c9b3652ceff862fd0f78f18c1}{get\+Front\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_aaa2e82f36f7eff1cbe025b25511e96d0}{get\+Left\+Side\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_aa4b1223ab5f99cc0de1712fbca79f119}{get\+Top\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a0ca9011af09843d4bcfb7b68c0530101}{reset\+View}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a8f3399be2fcbae58d9d52389e6940b81}{change\+Angle}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_acd4d5c9f36ef7da9f42c9447cf9981e8}{pr\+Values}} ()
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_aef7ba2f69afb2d954545f64c7fe24b14}{keyboard}} (unsigned char key, int x, int y)
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a231a70bdc7178ea1ca0dd1b93bda1818}{window\+Special}} (int key, int x, int y)
+\item 
+void \mbox{\hyperlink{3_d__to__2_d_8h_a02fd73d861ef2e4aabb38c0c9ff82947}{init}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{3_d__to__2_d_8h_a8b1c561ddcd700c4c09dfb8e7c5f4e61}{dim}} = 15.\+0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_a4d030258650c3ffda64c0ba5b361d36d}{toggle\+Mode}} = 0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_aa1265e50e981f8966896c18929ce6f74}{total\+Faces}} = 1
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_af905a9989361d094908ad04e08f6429d}{cx}} = 10
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_ad36501a70b25e18bcf48dd6e03392305}{cy}} = 0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_abe60747a0139954ef8def82af211b420}{cz}} = 10
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_a1cb6f035a0e9565bbf12c3ef04c3c229}{view}} = 0
+\item 
+float \mbox{\hyperlink{3_d__to__2_d_8h_ab8ef1bf8a70cc07c6d55823c390a7e76}{angle}}
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_ad948232652ae223c13c8759d7be814f8}{rot1}} = 0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_acc4f17f7d52ab4c866c4270e28c6f094}{rot2}} = 0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_a9bd11df7c5e066cacaf817d8e5283754}{rot3}} = 0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_a5ca53c6aa53a1c3649c7f047fe64e49b}{th}} =0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_adce2757fdc16c92198dce58c74145b46}{ph}} =0
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_a0e2c6074b080f7edcb7ed453e39b005b}{fov}} = 55
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_a2f193e1bfd9e37ca863d9445aa75e9f5}{asp}} = 1
+\item 
+int \mbox{\hyperlink{3_d__to__2_d_8h_aa3f0e2431f90448263669392fd4c09e2}{toggle\+View}} = 1
+\item 
+\mbox{\hyperlink{struct_faces}{Faces}} \mbox{\hyperlink{3_d__to__2_d_8h_a9db9e5e4110bb1ce6a82094126e41285}{F}} \mbox{[}100\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{3_d__to__2_d_8h_af23b6aef79e50bfd29fd5b763acb8f99}\label{3_d__to__2_d_8h_af23b6aef79e50bfd29fd5b763acb8f99}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!Cos@{Cos}}
+\index{Cos@{Cos}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{Cos}{Cos}}
+{\footnotesize\ttfamily \#define Cos(\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})~cos(\mbox{\hyperlink{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}/180$\ast$(t))}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}\label{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!PI@{PI}}
+\index{PI@{PI}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+1415926535898}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_ae6bf810ec90b6fb97470397fac19bd26}\label{3_d__to__2_d_8h_ae6bf810ec90b6fb97470397fac19bd26}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!Sin@{Sin}}
+\index{Sin@{Sin}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{Sin}{Sin}}
+{\footnotesize\ttfamily \#define Sin(\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})~sin(\mbox{\hyperlink{3_d__to__2_d_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}/180$\ast$(t))}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{3_d__to__2_d_8h_a37abedac5a2e232f35f1925669c648e1}\label{3_d__to__2_d_8h_a37abedac5a2e232f35f1925669c648e1}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!add\+Face@{add\+Face}}
+\index{add\+Face@{add\+Face}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{add\+Face()}{addFace()}}
+{\footnotesize\ttfamily void add\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this adds faces to the final list, whenever user is done drawing a face \mbox{\Hypertarget{3_d__to__2_d_8h_a8f3399be2fcbae58d9d52389e6940b81}\label{3_d__to__2_d_8h_a8f3399be2fcbae58d9d52389e6940b81}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!change\+Angle@{change\+Angle}}
+\index{change\+Angle@{change\+Angle}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{change\+Angle()}{changeAngle()}}
+{\footnotesize\ttfamily void change\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a070eb0c786650669a592f7e0d131bdb1}\label{3_d__to__2_d_8h_a070eb0c786650669a592f7e0d131bdb1}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!check\+Loop@{check\+Loop}}
+\index{check\+Loop@{check\+Loop}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{check\+Loop()}{checkLoop()}}
+{\footnotesize\ttfamily bool check\+Loop (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{x2,  }\item[{int}]{y1,  }\item[{int}]{y2,  }\item[{int}]{z1,  }\item[{int}]{z2 }\end{DoxyParamCaption})}
+
+Solid can have a maximum of 100 \mbox{\hyperlink{struct_faces}{Faces}} this checks the loop and thus gives a signal whenever a face is complete \mbox{\Hypertarget{3_d__to__2_d_8h_a1e5b20fed15743656bb6d2e6a6ea6269}\label{3_d__to__2_d_8h_a1e5b20fed15743656bb6d2e6a6ea6269}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!display@{display}}
+\index{display@{display}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the function to display the final output \mbox{\Hypertarget{3_d__to__2_d_8h_a7f988b701e1fc823cd6baac4112d691f}\label{3_d__to__2_d_8h_a7f988b701e1fc823cd6baac4112d691f}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!draw\+Faces@{draw\+Faces}}
+\index{draw\+Faces@{draw\+Faces}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{draw\+Faces()}{drawFaces()}}
+{\footnotesize\ttfamily void draw\+Faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this displays the faces on the window \mbox{\Hypertarget{3_d__to__2_d_8h_a04a5aa187f66cb4d9afcd25244188ec6}\label{3_d__to__2_d_8h_a04a5aa187f66cb4d9afcd25244188ec6}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!draw\+Front\+View@{draw\+Front\+View}}
+\index{draw\+Front\+View@{draw\+Front\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{draw\+Front\+View()}{drawFrontView()}}
+{\footnotesize\ttfamily void draw\+Front\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_ab5faa224cc65d6fbce2935d0ed45f600}\label{3_d__to__2_d_8h_ab5faa224cc65d6fbce2935d0ed45f600}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!draw\+Grid@{draw\+Grid}}
+\index{draw\+Grid@{draw\+Grid}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{draw\+Grid()}{drawGrid()}}
+{\footnotesize\ttfamily void draw\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this draws the grid to which help in drawing \mbox{\Hypertarget{3_d__to__2_d_8h_a38d63b700591c7243b42b2ade5ab3a3e}\label{3_d__to__2_d_8h_a38d63b700591c7243b42b2ade5ab3a3e}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!draw\+Side\+View@{draw\+Side\+View}}
+\index{draw\+Side\+View@{draw\+Side\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{draw\+Side\+View()}{drawSideView()}}
+{\footnotesize\ttfamily void draw\+Side\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a1e630ed6a0e89a3c7b0ac99c63d29166}\label{3_d__to__2_d_8h_a1e630ed6a0e89a3c7b0ac99c63d29166}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!draw\+Top\+View@{draw\+Top\+View}}
+\index{draw\+Top\+View@{draw\+Top\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{draw\+Top\+View()}{drawTopView()}}
+{\footnotesize\ttfamily void draw\+Top\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a8a94702c9b3652ceff862fd0f78f18c1}\label{3_d__to__2_d_8h_a8a94702c9b3652ceff862fd0f78f18c1}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!get\+Front\+View@{get\+Front\+View}}
+\index{get\+Front\+View@{get\+Front\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{get\+Front\+View()}{getFrontView()}}
+{\footnotesize\ttfamily void get\+Front\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_aaa2e82f36f7eff1cbe025b25511e96d0}\label{3_d__to__2_d_8h_aaa2e82f36f7eff1cbe025b25511e96d0}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!get\+Left\+Side\+View@{get\+Left\+Side\+View}}
+\index{get\+Left\+Side\+View@{get\+Left\+Side\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{get\+Left\+Side\+View()}{getLeftSideView()}}
+{\footnotesize\ttfamily void get\+Left\+Side\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_aa4b1223ab5f99cc0de1712fbca79f119}\label{3_d__to__2_d_8h_aa4b1223ab5f99cc0de1712fbca79f119}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!get\+Top\+View@{get\+Top\+View}}
+\index{get\+Top\+View@{get\+Top\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{get\+Top\+View()}{getTopView()}}
+{\footnotesize\ttfamily void get\+Top\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a02fd73d861ef2e4aabb38c0c9ff82947}\label{3_d__to__2_d_8h_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!init@{init}}
+\index{init@{init}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+initiates the display \mbox{\Hypertarget{3_d__to__2_d_8h_aef7ba2f69afb2d954545f64c7fe24b14}\label{3_d__to__2_d_8h_aef7ba2f69afb2d954545f64c7fe24b14}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!keyboard@{keyboard}}
+\index{keyboard@{keyboard}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{keyboard()}{keyboard()}}
+{\footnotesize\ttfamily void keyboard (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+to take inputs from the keyboard \mbox{\Hypertarget{3_d__to__2_d_8h_a81d5857ed4feef4a1d6f74f335832563}\label{3_d__to__2_d_8h_a81d5857ed4feef4a1d6f74f335832563}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!project@{project}}
+\index{project@{project}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{project()}{project()}}
+{\footnotesize\ttfamily void project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this helps in changing the perspective of vision \mbox{\Hypertarget{3_d__to__2_d_8h_acd4d5c9f36ef7da9f42c9447cf9981e8}\label{3_d__to__2_d_8h_acd4d5c9f36ef7da9f42c9447cf9981e8}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!pr\+Values@{pr\+Values}}
+\index{pr\+Values@{pr\+Values}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{pr\+Values()}{prValues()}}
+{\footnotesize\ttfamily void pr\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a0ca9011af09843d4bcfb7b68c0530101}\label{3_d__to__2_d_8h_a0ca9011af09843d4bcfb7b68c0530101}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!reset\+View@{reset\+View}}
+\index{reset\+View@{reset\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{reset\+View()}{resetView()}}
+{\footnotesize\ttfamily void reset\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a6819355374dd277347abd7c4235f0cd7}\label{3_d__to__2_d_8h_a6819355374dd277347abd7c4235f0cd7}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!reshape@{reshape}}
+\index{reshape@{reshape}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{reshape()}{reshape()}}
+{\footnotesize\ttfamily void reshape (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a25271cef7c85e564c8ee6a339be359cd}\label{3_d__to__2_d_8h_a25271cef7c85e564c8ee6a339be359cd}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!rot\+Grid@{rot\+Grid}}
+\index{rot\+Grid@{rot\+Grid}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{rot\+Grid()}{rotGrid()}}
+{\footnotesize\ttfamily void rot\+Grid (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a1b85f1b478c702e90d8b8c515f84d44e}\label{3_d__to__2_d_8h_a1b85f1b478c702e90d8b8c515f84d44e}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!sel\+View@{sel\+View}}
+\index{sel\+View@{sel\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{sel\+View()}{selView()}}
+{\footnotesize\ttfamily void sel\+View (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+toggles between wireframe view and solid view \mbox{\Hypertarget{3_d__to__2_d_8h_a61731e44675c1f32b5fa9d00b95c2969}\label{3_d__to__2_d_8h_a61731e44675c1f32b5fa9d00b95c2969}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!the\+Cube@{the\+Cube}}
+\index{the\+Cube@{the\+Cube}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{the\+Cube()}{theCube()}}
+{\footnotesize\ttfamily void the\+Cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the function for a small pointer cube that helps in drawing \mbox{\Hypertarget{3_d__to__2_d_8h_a231a70bdc7178ea1ca0dd1b93bda1818}\label{3_d__to__2_d_8h_a231a70bdc7178ea1ca0dd1b93bda1818}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!window\+Special@{window\+Special}}
+\index{window\+Special@{window\+Special}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{window\+Special()}{windowSpecial()}}
+{\footnotesize\ttfamily void window\+Special (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{3_d__to__2_d_8h_ab8ef1bf8a70cc07c6d55823c390a7e76}\label{3_d__to__2_d_8h_ab8ef1bf8a70cc07c6d55823c390a7e76}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!angle@{angle}}
+\index{angle@{angle}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float angle}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a2f193e1bfd9e37ca863d9445aa75e9f5}\label{3_d__to__2_d_8h_a2f193e1bfd9e37ca863d9445aa75e9f5}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!asp@{asp}}
+\index{asp@{asp}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{asp}{asp}}
+{\footnotesize\ttfamily int asp = 1}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_af905a9989361d094908ad04e08f6429d}\label{3_d__to__2_d_8h_af905a9989361d094908ad04e08f6429d}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!cx@{cx}}
+\index{cx@{cx}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{cx}{cx}}
+{\footnotesize\ttfamily int cx = 10}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_ad36501a70b25e18bcf48dd6e03392305}\label{3_d__to__2_d_8h_ad36501a70b25e18bcf48dd6e03392305}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!cy@{cy}}
+\index{cy@{cy}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{cy}{cy}}
+{\footnotesize\ttfamily int cy = 0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_abe60747a0139954ef8def82af211b420}\label{3_d__to__2_d_8h_abe60747a0139954ef8def82af211b420}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!cz@{cz}}
+\index{cz@{cz}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{cz}{cz}}
+{\footnotesize\ttfamily int cz = 10}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a8b1c561ddcd700c4c09dfb8e7c5f4e61}\label{3_d__to__2_d_8h_a8b1c561ddcd700c4c09dfb8e7c5f4e61}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!dim@{dim}}
+\index{dim@{dim}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{dim}{dim}}
+{\footnotesize\ttfamily double dim = 15.\+0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a9db9e5e4110bb1ce6a82094126e41285}\label{3_d__to__2_d_8h_a9db9e5e4110bb1ce6a82094126e41285}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!F@{F}}
+\index{F@{F}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_faces}{Faces}} F\mbox{[}100\mbox{]}}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a0e2c6074b080f7edcb7ed453e39b005b}\label{3_d__to__2_d_8h_a0e2c6074b080f7edcb7ed453e39b005b}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!fov@{fov}}
+\index{fov@{fov}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{fov}{fov}}
+{\footnotesize\ttfamily int fov = 55}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_adce2757fdc16c92198dce58c74145b46}\label{3_d__to__2_d_8h_adce2757fdc16c92198dce58c74145b46}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!ph@{ph}}
+\index{ph@{ph}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{ph}{ph}}
+{\footnotesize\ttfamily int ph =0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_ad948232652ae223c13c8759d7be814f8}\label{3_d__to__2_d_8h_ad948232652ae223c13c8759d7be814f8}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!rot1@{rot1}}
+\index{rot1@{rot1}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{rot1}{rot1}}
+{\footnotesize\ttfamily int rot1 = 0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_acc4f17f7d52ab4c866c4270e28c6f094}\label{3_d__to__2_d_8h_acc4f17f7d52ab4c866c4270e28c6f094}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!rot2@{rot2}}
+\index{rot2@{rot2}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{rot2}{rot2}}
+{\footnotesize\ttfamily int rot2 = 0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a9bd11df7c5e066cacaf817d8e5283754}\label{3_d__to__2_d_8h_a9bd11df7c5e066cacaf817d8e5283754}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!rot3@{rot3}}
+\index{rot3@{rot3}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{rot3}{rot3}}
+{\footnotesize\ttfamily int rot3 = 0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a5ca53c6aa53a1c3649c7f047fe64e49b}\label{3_d__to__2_d_8h_a5ca53c6aa53a1c3649c7f047fe64e49b}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!th@{th}}
+\index{th@{th}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{th}{th}}
+{\footnotesize\ttfamily int th =0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a4d030258650c3ffda64c0ba5b361d36d}\label{3_d__to__2_d_8h_a4d030258650c3ffda64c0ba5b361d36d}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!toggle\+Mode@{toggle\+Mode}}
+\index{toggle\+Mode@{toggle\+Mode}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{toggle\+Mode}{toggleMode}}
+{\footnotesize\ttfamily int toggle\+Mode = 0}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_aa3f0e2431f90448263669392fd4c09e2}\label{3_d__to__2_d_8h_aa3f0e2431f90448263669392fd4c09e2}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!toggle\+View@{toggle\+View}}
+\index{toggle\+View@{toggle\+View}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{toggle\+View}{toggleView}}
+{\footnotesize\ttfamily int toggle\+View = 1}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_aa1265e50e981f8966896c18929ce6f74}\label{3_d__to__2_d_8h_aa1265e50e981f8966896c18929ce6f74}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!total\+Faces@{total\+Faces}}
+\index{total\+Faces@{total\+Faces}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{total\+Faces}{totalFaces}}
+{\footnotesize\ttfamily int total\+Faces = 1}
+
+\mbox{\Hypertarget{3_d__to__2_d_8h_a1cb6f035a0e9565bbf12c3ef04c3c229}\label{3_d__to__2_d_8h_a1cb6f035a0e9565bbf12c3ef04c3c229}} 
+\index{3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}!view@{view}}
+\index{view@{view}!3\+D\+\_\+to\+\_\+2\+D.\+h@{3\+D\+\_\+to\+\_\+2\+D.\+h}}
+\subsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily int view = 0}
+
